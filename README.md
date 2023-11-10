@@ -2,6 +2,9 @@
 
 **Artemis** is a Python script that automates file categorization and organization based on file extensions
 
+
+## Table of Contents
+
 - [About](#about)
 - [Features](#features)
 - [Usage](#usage)
