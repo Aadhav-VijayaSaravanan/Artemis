@@ -2,6 +2,17 @@
 
 This Python script organizes files based on their extensions into different folders. It categorizes files into various categories like Documents, Images, Audio, Video, Code, and more.
 
+## About
+
+**File Organizer** is a Python script designed to simplify the task of organizing files in a directory by categorizing them into different folders based on their file extensions. It aims to help you maintain a more organized and structured file system, making it easier to find and manage your files.
+
+### Features
+
+- Automatically categorizes files into various predefined categories, such as Documents, Images, Audio, Video, Code, and more.
+- Supports a wide range of file extensions, ensuring that most common file types are appropriately sorted.
+- Provides a flexible "Other" category for any file extensions not explicitly listed in the predefined categories.
+- Simple and easy-to-use command-line interface, allowing you to organize your files with just a few simple steps.
+- 
 ## Usage
 
 1. Clone this repository to your local machine:
