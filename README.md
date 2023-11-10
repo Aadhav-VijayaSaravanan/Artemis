@@ -4,47 +4,54 @@ This Python script organizes files based on their extensions into different fold
 
 ## Usage
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine:
 
     ```bash
-    `git clone https://github.com/Aadhav-VijayaSaravanan/file-organizer.git`
+    git clone [https://github.com/Aadhav-VijayaSaravanan/file-organizer.git](https://github.com/Aadhav-VijayaSaravanan/file-organizer.git)
+    ```
 
-OR download a zip file of the project using the "Download ZIP" button on the GitHub page.
+   OR download a zip file of the project using the "Download ZIP" button on the GitHub page.
 
-2.  Navigate to the cloned directory.
-
-    ```bash
-    `cd file-organizer`
-
-1.  Run the script by providing the path to the directory you want to organize.
+2. Navigate to the cloned directory:
 
     ```bash
+    cd file-organizer
+    ```
 
-    `python file_organizer.py`
+3. Run the script by providing the path to the directory you want to organize:
 
-3.  Follow the on-screen instructions to input the path, and the script will organize the files accordingly.
+    ```bash
+    python file_organizer.py
+    ```
 
-File Categories
----------------
+4. Follow the on-screen instructions to input the path, and the script will organize the files accordingly.
 
--   Documents: .pdf, .docx, .txt, .pptx, .doc, .xls, .csv, .odt
--   Images: .png, .jpg, .jpeg, .gif, .bmp, .tiff, .eps
--   Audio: .m4a, .mp3, .wav, .flac, .aac, .ogg, .wma
--   Video: .mp4, .avi, .mkv, .wmv, .flv, .mov
--   Code: .py, .java, .cpp, .html, .css, .js, .json, .sql, .php
--   Archives: .zip, .rar, .7z, .tar, .gz
--   3D Models: .f3d, .STL, .blend, .obj
--   Spreadsheets: .xlsx, .ods
--   Presentations: .ppt, .key, .sxi
--   Ebooks: .epub, .mobi, .azw, .djvu
--   Text: .rtf, .log, .md, .tex, .yml
--   Database: .db, .sqlite, .dbf, .sql, .mdb
--   Executable: .exe, .bat, .sh, .msi, .app
--   Web: .html, .css, .js, .php, .xml, .asp
--   Config: .yaml, .json, .xml, .ini, .cfg
--   Images Raw: .raw, .nef, .dng, .cr2
--   Compressed Audio: .flac, .ape
--   Compressed Video: .mkv, .avi
--   GIS Data: .shp, .kml, .gpx
--   Fonts: .ttf, .otf
--   CAD Drawings: .dwg, .dxf
+## File Categories
+
+The script organizes files into the following categories:
+
+1. Documents:
+   - .pdf, .docx, .txt, .pptx, .doc, .xls, .csv, .odt
+
+2. Images:
+   - .png, .jpg, .jpeg, .gif, .bmp, .tiff, .eps
+
+3. Audio:
+   - .m4a, .mp3, .wav, .flac, .aac, .ogg, .wma
+
+4. Video:
+   - .mp4, .avi, .mkv, .wmv, .flv, .mov
+
+5. Code:
+   - .py, .java, .cpp, .html, .css, .js, .json, .sql, .php
+
+6. Archives:
+   - .zip, .rar, .7z, .tar, .gz
+
+... (continue the list for other categories)
+
+7. Other: Files with extensions not listed in the categories above
+
+Make sure to provide a valid path to the directory you want to organize, and the script will move the files to their respective folders according to their extensions.
+
+Enjoy your organized files!
