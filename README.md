@@ -48,8 +48,6 @@ The script organizes files into the following categories:
 6. Archives:
    - .zip, .rar, .7z, .tar, .gz
 
-... (continue the list for other categories)
-
 7. Other: Files with extensions not listed in the categories above
 
 Make sure to provide a valid path to the directory you want to organize, and the script will move the files to their respective folders according to their extensions.
