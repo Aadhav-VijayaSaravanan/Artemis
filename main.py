@@ -1,41 +1,54 @@
 import os
 import shutil
 
-def organize_files(source_path, extensions):
-    if not os.path.exists(source_path):
-        print("Source directory does not exist.")
-        return
+path = input("Input your path: ")
 
-    for ext in extensions:
-        ext = ext.lower()
-        folder_name = ext + " files"
-        folder = os.path.join(source_path, folder_name)
+file_categories = {
+    "Documents": [".pdf", ".docx", ".txt", ".pptx", ".doc", ".xls", ".csv", ".odt"],
+    "Images": [".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".eps"],
+    "Audio": [".m4a", ".mp3", ".wav", ".flac", ".aac", ".ogg", ".wma"],
+    "Video": [".mp4", ".avi", ".mkv", ".wmv", ".flv", ".mov"],
+    "Code": [".py", ".java", ".cpp", ".html", ".css", ".js", ".json", ".sql", ".php"],
+    "Archives": [".zip", ".rar", ".7z", ".tar", ".gz"],
+    "3D Models": [".f3d", ".STL", ".blend", ".obj"],
+    "Spreadsheets": [".xlsx", ".ods"],
+    "Presentations": [".ppt", ".key", ".sxi"],
+    "Ebooks": [".epub", ".mobi", ".azw", ".djvu"],
+    "Text": [".rtf", ".log", ".md", ".tex", ".yml"],
+    "Database": [".db", ".sqlite", ".dbf", ".sql", ".mdb"],
+    "Executable": [".exe", ".bat", ".sh", ".msi", ".app"],
+    "Web": [".html", ".css", ".js", ".php", ".xml", ".asp"],
+    "Config": [".yaml", ".json", ".xml", ".ini", ".cfg"],
+    "Images Raw": [".raw", ".nef", ".dng", ".cr2"],
+    "Compressed Audio": [".flac", ".ape"],
+    "Compressed Video": [".mkv", ".avi"],
+    "GIS Data": [".shp", ".kml", ".gpx"],
+    "Fonts": [".ttf", ".otf"],
+    "CAD Drawings": [".dwg", ".dxf"],
+}
 
-        if not os.path.exists(folder):
-            os.makedirs(folder)
+file_extensions = {ext: category for category, ext_list in file_categories.items() for ext in ext_list}
 
-    for root, dirs, files in os.walk(source_path):
-        for file in files:
-            _, ext = os.path.splitext(file)
-            ext = ext.lower()
-            if ext in extensions:
-                folder_name = ext + " files"
-                folder = os.path.join(source_path, folder_name)
-                source_path_file = os.path.join(root, file)
-                destination_path = os.path.join(folder, file)
+file_extensions["Other"] = []
 
-                if not os.path.exists(destination_path):
-                    shutil.move(source_path_file, destination_path)
-                    print(f"Moved: {file} to {folder_name}")
+file_names = os.listdir(path)
 
-if __name__ == "__main__":
-    source_path = input("Enter the source directory path: ")
-    extensions = [
-        ".pdf", ".m4a", ".mp3", ".png", ".txt", ".py", ".pptx", ".docx", ".mp4",
-        ".jpg", ".csv", ".xlsx", ".html", ".xml", ".gif", ".jpeg", ".doc", ".xls",
-        ".csv", ".json", ".java", ".cpp", ".zip", ".rar", ".avi", ".mkv", ".wav",
-        ".flac", ".html", ".css", ".js", ".log", ".sql", ".php", ".ppt", ".odt",
-        ".ods", ".json", ".sql", ".yaml", ".json", ".xml", ".zip", ".jpeg", ".exe",
-        ".f3d", ".STL", ".blend"
-    ]
-    organize_files(source_path, extensions)
+for file in file_names:
+    file_extension = os.path.splitext(file)[1].lower()
+
+    if file_extension in file_extensions:
+        category = file_extensions[file_extension]
+    else:
+        category = "Other"
+
+    folder_name = category + " folder"
+    folder = os.path.join(path, folder_name)
+
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
+    source_path = os.path.join(path, file)
+    destination_path = os.path.join(folder, file)
+
+    if not os.path.exists(destination_path):
+        shutil.move(source_path, destination_path)
