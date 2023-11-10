@@ -1,10 +1,10 @@
 ## Artemis
 
-****Artemis**** is a Python script that automates file categorization and organization based on file extensions
+**Artemis** is a Python script that automates file categorization and organization based on file extensions
 
 ## About
 
-**File Organizer** is a Python script designed to simplify the task of organizing files in a directory by categorizing them into different folders based on their file extensions. It aims to help you maintain a more organized and structured file system, making it easier to find and manage your files.
+**Artemis** is a Python script designed to simplify the task of organizing files in a directory by categorizing them into different folders based on their file extensions. It aims to help you maintain a more organized and structured file system, making it easier to find and manage your files.
 
 ### Features
 
