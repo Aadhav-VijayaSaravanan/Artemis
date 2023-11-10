@@ -12,7 +12,7 @@
 - Supports a wide range of file extensions, ensuring that most common file types are appropriately sorted.
 - Provides a flexible "Other" category for any file extensions not explicitly listed in the predefined categories.
 - Simple and easy-to-use command-line interface, allowing you to organize your files with just a few simple steps.
-- 
+
 ## Usage
 
 1. Clone this repository to your local machine:
