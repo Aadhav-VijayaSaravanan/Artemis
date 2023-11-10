@@ -19,7 +19,7 @@ def organize_files(source_path, extensions):
             _, ext = os.path.splitext(file)
             ext = ext.lower()
             if ext in extensions:
-                folder_name = ext.lstrip('.').replace('.', ' ').capitalize() + " folder"
+                folder_name = ext + " files"
                 folder = os.path.join(source_path, folder_name)
                 source_path_file = os.path.join(root, file)
                 destination_path = os.path.join(folder, file)
