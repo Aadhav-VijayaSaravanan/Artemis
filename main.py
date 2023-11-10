@@ -8,7 +8,7 @@ def organize_files(source_path, extensions):
 
     for ext in extensions:
         ext = ext.lower()
-        folder_name = ext.lstrip('.').replace('.', ' ').capitalize() + " folder"
+        folder_name = ext + " files"
         folder = os.path.join(source_path, folder_name)
 
         if not os.path.exists(folder):
