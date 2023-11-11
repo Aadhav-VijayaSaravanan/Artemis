@@ -34,13 +34,13 @@
 2. Navigate to the cloned directory:
 
     ```bash
-    cd file-organizer
+    cd Artemis-main
     ```
 
 3. Run the script by providing the path to the directory you want to organize:
 
     ```bash
-    python file_organizer.py
+    python main.py
     ```
 
 4. Follow the on-screen instructions to input the path, and the script will organize the files accordingly.
