@@ -26,7 +26,7 @@
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/Aadhav-VijayaSaravanan/file-organizer.git
+    git clone https://github.com/Aadhav-VijayaSaravanan/Artemis.git
     ```
 
    OR download a zip file of the project using the "Download ZIP" button on the GitHub page.
